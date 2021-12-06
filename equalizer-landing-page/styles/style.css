@@ -44,8 +44,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "IBM Plex Sans";
-  background: url(/images/bg-main-desktop.png) top -112px left -146px;
-  display: flex;
+  background: url(/images/bg-main-desktop.png) top -275px left -250px no-repeat;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
 }
@@ -248,4 +248,38 @@ footer {
 
 .footer__social-icons svg:hover path {
   fill: var(--secondary);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    /* background: red; */
+    padding: 0 39px 85px 39px;
+    background: url(/images/bg-main-tablet.png) top -205px left -397px no-repeat;
+  }
+
+  header {
+    width: 510px;
+    /* margin-left: 39px; */
+    margin-bottom: 111px;
+  }
+
+  h1 {
+    width: inherit;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.727273px;
+  }
+  .header__background {
+    position: absolute;
+    right: -35px;
+    top: -32px;
+  }
+
+  .header__subtitle {
+    width: inherit;
+  }
+
+  .content {
+
+  }
 }
