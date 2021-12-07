@@ -45,7 +45,7 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
   font-family: "IBM Plex Sans";
   background: url(/images/bg-main-desktop.png) top -275px left -250px no-repeat;
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -81,6 +81,7 @@ h1 {
 .header__background {
   position: absolute;
   right: 0;
+  top: 0;
 }
 
 .content {
@@ -218,27 +219,29 @@ h1 {
   margin-right: 8px;
 }
 
-
 footer {
-  width: 1110px;
+  display: flex;
   padding-bottom: 91px;
 }
 
+.footer__info-social {
+  display: flex;
+}
+
 .footer__logo {
-  float: left;
+  align-self: flex-start;
   margin-right: 138px;
 }
 
 .footer__copyright {
-  float: left;
   width: 366px;
   margin-right: 359px;
 }
 
 .footer__social-icons {
-  float: left;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100px;
 }
 
@@ -252,15 +255,16 @@ footer {
 
 @media only screen and (max-width: 768px) {
   body {
-    /* background: red; */
+    display: block;    
+    width: 768px;
     padding: 0 39px 85px 39px;
     background: url(/images/bg-main-tablet.png) top -205px left -397px no-repeat;
   }
 
   header {
     width: 510px;
-    /* margin-left: 39px; */
     margin-bottom: 111px;
+    overflow: hidden;
   }
 
   h1 {
@@ -280,6 +284,46 @@ footer {
   }
 
   .content {
+    width: inherit;
+    height: 850px;
+  }
 
+  .content__background {
+    width: 100%;
+  }
+
+  .content__mobile-image {
+    position: absolute;
+    top: 0;
+    left: 64px;
+    z-index: 2;
+    width: 270px;
+  }
+
+  .card-info {
+    position: absolute;
+    left: 239px;
+    bottom: 0;
+    z-index: 3;
+    width: 399px;
+    background: var(--secondary);
+    border-radius: 12px;
+    padding: 58px 59px 48px 54px;
+  }
+
+  footer {
+    width: inherit;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+
+  .footer__logo {
+    margin-bottom: 32px;
+    float: none;
+  }
+
+  .footer__copyright {
+    display: block;
+    margin-right: 230px;
   }
 }
