@@ -353,3 +353,123 @@ footer {
     margin-right: 230px;
   }
 }
+
+@media only screen and (max-width: 414px) {
+  body {
+    display: block;    
+    width: 100%;
+    padding: 0;
+    background: url(/images/bg-main-mobile.png) top -220px left 0 no-repeat;
+  }
+
+  header {
+    padding: 0 24px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 66px;
+  }
+
+  .header__logo {
+    margin-bottom: 66px;
+  }
+
+  h1 {
+    width: 100%;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.454545px;
+    margin-bottom: 20px;
+  }
+
+  .header__subtitle {
+    font-size: 16px;
+    line-height: 26px;  
+  }
+
+  .header__background {
+    display: none;
+  }
+
+  .header__subtitle {
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 1024px;
+    margin-bottom: 64px;
+  }
+
+  .content__background {
+    width: 100%;
+    margin-bottom: 394px;
+  }
+
+  .content__mobile-image {
+    width: 209px;
+    position: static;
+    margin-bottom: 48px;
+  }
+
+  .content__illustration {
+    left: 48px;
+    top: 0px;
+    background-size: 280px 420px;
+  }
+
+  .card-info {
+    position: static;
+    z-index: 3;
+    width: 100%;
+    background: var(--secondary);
+    border-radius: 12px;
+    padding: 48px 54px 48px 49px;
+  }
+
+  .card-info__title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 12px;
+  }
+
+  .card-info__description {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 36px;
+  }
+
+  .card-info__price {
+    margin-top: 36px;
+  }
+
+  .card-info__button-ios {
+    margin-top: 32px;
+  }
+
+  footer {
+    width: 100%;
+    flex-direction: column;
+    padding: 0px 24px 80px;
+
+  }
+
+  .footer__logo {
+    margin-bottom: 32px;
+    float: none;
+  }
+
+  .footer__copyright {
+    display: block;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+
+  .footer__info-social {
+    flex-direction: column;
+  }
+}
