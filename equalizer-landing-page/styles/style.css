@@ -44,7 +44,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "IBM Plex Sans";
-  background: url(/images/bg-main-desktop.png) top -275px left -250px no-repeat;
+  background: url(images/bg-main-desktop.png) top -275px left -250px no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
