@@ -81,7 +81,7 @@ h1 {
 .header__background {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -40px;
 }
 
 .content {
@@ -92,7 +92,6 @@ h1 {
   align-items: center;
   margin-bottom: 87px;
 }
-
 
 .content__background {
   position: absolute;
@@ -137,7 +136,7 @@ h1 {
   font-size: 40px;
   line-height: 52px;
   color: var(--white);
-  margin-bottom: 39px;
+  margin-bottom: 22px;
 }
 
 .card-info__description {
@@ -236,6 +235,9 @@ footer {
 .footer__copyright {
   width: 366px;
   margin-right: 359px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .footer__social-icons {
