@@ -23,11 +23,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 24px;
 }
 
 img, picture, video, canvas, svg {
   display: block;
-  max-width: 100%;
+  // max-width: 100%;
 }
 
 input, button, textarea, select {
@@ -43,6 +44,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .c-article {
+  position: relative;
   background: #FFFFFF;
   box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
   border-radius: 10px;
@@ -57,7 +59,7 @@ p, h1, h2, h3, h4, h5, h6 {
     }
   }
   .c-article__content {
-    padding: 36px 32px 32px 32px;
+    padding: 36px 32px 18px 32px;
     .c-article__text {
     }
     .c-article__tilte {
@@ -123,11 +125,78 @@ p, h1, h2, h3, h4, h5, h6 {
       svg {}
     }
   }
+  .c-article__share {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $very-dark-grayish-blue;
+    padding: 16px 32px;
+    border-radius: 0 0 10px 10px;
+    .c-article__social-icons {
+      display: flex;
+      align-items: center;
+      & > * {
+        margin-right: 16px;
+      }
+      p {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 5px;
+        text-transform: capitalize;
+        color: $grayish-blue;
+      }
+    }
+    .c-article__btn-share {
+      width: 32px;
+      height: 32px;
+      border-radius: 100%;
+      background: $desaturated-dark-blue;;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg path {
+        fill: #fff;
+      }
+    }
+  }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (min-width: 1440px) {
   body {
-    padding: 24px;
-    flex-direction: column;
+    margin: 0 355px;
+    padding: 0;
+  }
+  .c-article {
+    flex-direction: row;
+    .c-article__image {
+      img {
+        width: 285px;
+        height: 280px;
+        border-radius: 10px 0 0 10px;
+      }
+    }
+    .c-article__content {
+      padding: 32px 40px;
+      .c-article__text {
+        .c-article__tilte {
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: 0.25px;
+        }
+        .c-article__description {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .c-article__share {
+      display: none;
+    }
   }
 }
