@@ -126,6 +126,10 @@ p, h1, h2, h3, h4, h5, h6 {
     }
   }
   .c-article__share {
+    &:hover {
+      opacity: 1;
+    }
+    opacity: 0;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -199,4 +203,4 @@ p, h1, h2, h3, h4, h5, h6 {
       display: none;
     }
   }
-}
+} 

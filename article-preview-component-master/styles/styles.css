@@ -152,6 +152,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .c-article .c-article__share {
+  opacity: 0;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -167,6 +168,10 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #48556a;
   padding: 16px 32px;
   border-radius: 0 0 10px 10px;
+}
+
+.c-article .c-article__share:hover {
+  opacity: 1;
 }
 
 .c-article .c-article__share .c-article__social-icons {
