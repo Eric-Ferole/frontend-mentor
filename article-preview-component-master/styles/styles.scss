@@ -95,7 +95,7 @@ p, h1, h2, h3, h4, h5, h6 {
           font-family: Manrope;
           font-size: 13px;
           font-style: normal;
-          font-weight: 500;
+          font-weight: 700;
           line-height: 20px;
           letter-spacing: 0.12187500298023224px;
           color: $very-dark-grayish-blue;
@@ -154,19 +154,24 @@ p, h1, h2, h3, h4, h5, h6 {
         color: $grayish-blue;
       }
     }
+    }
     .c-article__btn-share {
+      position: absolute;
+      bottom: 18px;
+      right: 32px;
+      z-index: 2;
       cursor: pointer;
       width: 32px;
       height: 32px;
       border-radius: 100%;
-      background: $desaturated-dark-blue;
+      background: $light-grayish-blue;
       display: flex;
       justify-content: center;
       align-items: center;
       svg path {
-        fill: #fff;
+        fill: $desaturated-dark-blue;
       }
-    }
+
   }
   .tooltip {
     position: absolute;
@@ -178,6 +183,9 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 100%;
     bottom: 0;
     border-radius: 0px 0px 10px 10px;
+    &.toolTip--isvisible {
+      visibility: hidden;
+    }
     p {
       margin-right: 16px;
       font-family: Manrope;
@@ -227,8 +235,9 @@ p, h1, h2, h3, h4, h5, h6 {
         }
       }
     }
-    .c-article__share {
-      display: none;
+    .c-article__btn-share {
+      bottom: 32px;
+      right: 40px;
     }
     .tooltip {
       justify-content: center;
@@ -247,12 +256,6 @@ p, h1, h2, h3, h4, h5, h6 {
         border-style: solid;
         border-color: $very-dark-grayish-blue transparent transparent transparent;
       }
-      &.toolTip--isvisible {
-        visibility: hidden;
-      }
-      // .tooltip__btn-share {
-      //   display: none;
-      // }
     }
   }
 }
