@@ -45,19 +45,12 @@
     </div>
   </div>
   <script>
-    // 1. Select event target
-    // 2. Create the function
-    // 2. Create the .addEventListener() (event and function)
-
   eventTarget = document.querySelector('.c-article__btn-share');
 
-  // When we click on the share button, the tooltip appears
   eventHandlerFunction = function() {
     toolTip = document.querySelector('.tooltip');
     console.log(toolTip.classList)
     toolTip.classList.toggle('toolTip--isvisible')
-    
-    // console.log(tooltip);
   }
   
   eventTarget.addEventListener("click", eventHandlerFunction);
